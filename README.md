@@ -90,15 +90,11 @@ aegis-sos/
 └── ...config      Next.js, TypeScript, ESLint, PostCSS, Tailwind config
 ```
 
-## Demo
-
-[Live demo link — add before submission]
-
-[Screenshot or screen recording — add before submission]
-
 ## Team
 
-[Add team member names and roles]
+Joann Binny -- Team Lead
+Shaun Davis S
+Juan Peter
 
 ## License
 
