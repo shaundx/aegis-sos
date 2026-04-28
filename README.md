@@ -23,7 +23,7 @@ Aegis SOS is a web-based system for generating and distributing structured emerg
 - Real-time alert storage and retrieval via Supabase
 - Geolocation capture attached to every alert
 - No account required to send an SOS
-- Runs in any modern browser — no installation needed
+- Runs in any modern browser
 
 ## Tech Stack
 
