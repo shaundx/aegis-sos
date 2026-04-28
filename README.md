@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Aegis SOS
+
+**Emergency alert and SOS dispatch app for the general public in hospitality.**
+
+> Built at Hack2Skill Google Solutions Challenge · Submitted on 28th April 
+
+---
+
+## The Problem
+
+Emergency response in hospitality environments is often limited by the quality of the initial report.
+
+Information is typically incomplete, inconsistent, or delayed, forcing staff and responders to verify details before acting. This introduces a gap between incident occurrence and coordinated response.
+
+## What Aegis SOS Does
+
+Aegis SOS is a web-based system for generating and distributing structured emergency alerts without requiring installation. It accepts free-form input, converts it into a consistent, actionable format, and dispatches it in real time to relevant parties. The system reduces ambiguity at the point of reporting, allowing response to begin with usable information.
+
+## Features
+
+- AI-assisted alert composition using Google Gemini
+- SMS dispatch via Twilio so alerts reach people off-platform
+- Real-time alert storage and retrieval via Supabase
+- Geolocation capture attached to every alert
+- No account required to send an SOS
+- Runs in any modern browser — no installation needed
+
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Framework | Next.js 16 (App Router) |
+| Language | TypeScript |
+| Styling | Tailwind CSS v4 |
+| AI | Google Gemini (`@google/generative-ai`) |
+| Database / Backend | Supabase |
+| SMS Dispatch | Twilio |
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+
+- A Supabase project
+- A Twilio account with a phone number
+- A Google Gemini API key
+
+### Installation
+
+```bash
+git clone https://github.com/shaundx/aegis-sos.git
+cd aegis-sos
+npm install
+```
+
+### Environment Variables
+
+Create a `.env.local` file in the project root:
+
+```
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+GEMINI_API_KEY=your_gemini_api_key
+TWILIO_ACCOUNT_SID=your_twilio_account_sid
+TWILIO_AUTH_TOKEN=your_twilio_auth_token
+TWILIO_PHONE_NUMBER=your_twilio_phone_number
+```
+
+### Running Locally
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+aegis-sos/
+├── app/           Next.js App Router pages and API routes
+├── public/        Static assets
+└── ...config      Next.js, TypeScript, ESLint, PostCSS, Tailwind config
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Demo
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+[Live demo link — add before submission]
 
-## Deploy on Vercel
+[Screenshot or screen recording — add before submission]
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Team
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[Add team member names and roles]
+
+## License
+
+MIT
