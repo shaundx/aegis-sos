@@ -93,7 +93,9 @@ aegis-sos/
 ## Team
 
 Joann Binny -- Team Lead
+
 Shaun Davis S
+
 Juan Peter
 
 ## License
